@@ -101,6 +101,7 @@ export function LocationInput({ value, onChange }: LocationInputProps) {
                 </div>
                 {navigator.geolocation && (
                     <Button
+                        type="button"
                         variant="outline"
                         onClick={() => {
                             navigator.geolocation.getCurrentPosition((position) => {
