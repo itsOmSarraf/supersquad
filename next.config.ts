@@ -1,7 +1,9 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  /* config options here */
+// next.config.js or next.config.mjs
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+	env: {
+		DATABASE_URL: process.env.DATABASE_URL
+	}
 };
 
-export default nextConfig;
+module.exports = nextConfig;
